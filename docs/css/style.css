@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.main-title{
+    font-weight: 200;
+    color: #000;
+}
+
+.banner{
+    width: 100%;
+    overflow: hidden;
+    max-height: 800px;
+    background: url('../img/head-caption.png') no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+.banner img {
+    text-align: center;
+    width:auto;
+    height: 800px;
+}
+.intro-text{
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+.intro-desc{
+    color: #797979;
+    font-size: 30px;
+    font-weight: 200;
+}
+.img-divider{
+    width: auto;
+    max-height: 250px;
+}
+.intro-header{
+    color: #e2af3d;
+    font-size: 34px;
+    font-weight: 300;
+}
+.engagement{
+    background:url('../img/engagement-background.png') no-repeat;
+    background-size: contain;
+    background-position:top right;
+}
+/* Main CSS */
+.grid-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+	grid-column: span 2;
+}
+.grid-wrapper .tall {
+	grid-row: span 2;
+}
+.grid-wrapper .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+footer{
+    background: #c4a34f;
+    color: #fff;
+}
+.text-light{
+    font-weight: 200;
+}
+.text-semibold{
+    font-weight: 400;
+}
